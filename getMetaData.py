@@ -14,8 +14,7 @@ def getMetaData_desc(image_id):
     response_data = response.json()
 
     if "metadata" in response_data and "desc" in response_data["metadata"]:
-        # ここでdescを取得
-        print(response_data)
+	# ここでdescを取得するためのjson解析
         desc = response_data["metadata"]["desc"]
         return desc
     else:
@@ -26,4 +25,4 @@ if __name__ == "__main__":
     upload_id = "fcae5cfe1ba5d1672cf8f7cb06d6e3e4"
 
     MetaData = getMetaData_desc(upload_id)
-    print(MetaData) 
+    print(MetaData)
