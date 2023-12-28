@@ -6,7 +6,7 @@ import io
 
 load_dotenv()
 
-ACCESS_TOKEN=os.getenv("GYAZO_ACCESS_TOKEN") 
+ACCESS_TOKEN= # YOUR_ACCESS_TOKEN
 
 def pil_to_binary(pil_img, format="JPEG"):
     if pil_img.mode == "RGBA" and format == "JPEG":

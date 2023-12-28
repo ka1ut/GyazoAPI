@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GYAZO_ACCESS_TOKEN=os.getenv("GYAZO_ACCESS_TOKEN")
+ACCESS_TOKEN= # YOUR_ACCESS_TOKEN
 
 def getMetaData_desc(image_id):
-    headers = {'Authorization': "Bearer {}".format(GYAZO_ACCESS_TOKEN)}
+    headers = {'Authorization': "Bearer {}".format(ACCESS_TOKEN)}
     
     response = requests.get(f"https://api.gyazo.com/api/images/{image_id}", headers=headers)
     response.raise_for_status()
