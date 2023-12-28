@@ -6,7 +6,7 @@ import io
 
 load_dotenv()
 
-ACCESS_TOKEN=os.getenv("GYAZO_ACCESS_TOKEN")
+ACCESS_TOKEN=os.getenv("GYAZO_ACCESS_TOKEN") 
 
 def pil_to_binary(pil_img, format="JPEG"):
     if pil_img.mode == "RGBA" and format == "JPEG":
@@ -27,7 +27,6 @@ def singleUpload(img, description):
 
     # URLの存在チェックと表示
     if "url" in response_data:
-        print(response_data)
         url = response_data["url"]
         return url
     else:
