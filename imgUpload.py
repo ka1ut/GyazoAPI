@@ -1,10 +1,7 @@
 import requests
-import os
-from dotenv import load_dotenv
 from PIL import Image
 import io
 
-load_dotenv()
 
 ACCESS_TOKEN= # YOUR_ACCESS_TOKEN
 

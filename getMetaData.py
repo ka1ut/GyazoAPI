@@ -1,8 +1,4 @@
 import requests
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 ACCESS_TOKEN= # YOUR_ACCESS_TOKEN
 
