@@ -23,7 +23,7 @@ def getMetaData_desc(image_id):
 
 
 if __name__ == "__main__":    
-    upload_id = "864127743b07d870a98912c11afa5656"
+    upload_id = "fcae5cfe1ba5d1672cf8f7cb06d6e3e4"
 
     MetaData = getMetaData_desc(upload_id)
     print(MetaData) 
